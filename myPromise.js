@@ -109,6 +109,7 @@ function Promise (fn) {
 		{
 			case "pending":
 				doneList.push(done);
+				//每次如果没有推入fail方法，我也会推入一个null来占位
 				failList.push(fail || null);
 				return this;				
 				break;
