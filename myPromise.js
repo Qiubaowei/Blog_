@@ -165,6 +165,7 @@ function Promise (fn) {
 				}
 				else
 				{
+					//如果不是promise，执行完当前的fail之后，继续执行doneList
 					value = temp;
 					doneList.shift();
 					failList.shift();
