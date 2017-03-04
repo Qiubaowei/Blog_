@@ -96,6 +96,8 @@
 //         console.log('p2的结果：' + res)
 //     });
 
+
+//this is my first promise
 function Promise (fn) {
 	//需要一个成功时的回调
 	var state = 'pending';
