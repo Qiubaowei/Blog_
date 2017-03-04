@@ -154,6 +154,7 @@ function Promise (fn) {
 			for (var i = 0; i < failList.length; i++) 
 			{
 				var tempRe = failList[i](value);
+				//如果reject里面传入了一个promise，那么执行完此次的fail之后，将剩余的done和fail传入新的promise中
 				if(tempRe instanceof Promise)
 				{
 					var newP = tempRe;
