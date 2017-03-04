@@ -97,7 +97,7 @@
 //     });
 
 
-//this is my first promise
+//this is my first promise 教程来源： http://www.jianshu.com/p/473cd754311f
 function Promise (fn) {
 	//需要一个成功时的回调
 	var state = 'pending';
